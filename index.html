@@ -128,6 +128,29 @@
       font-size: 0.8rem;
       color: #888;
     }
+
+    .socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  margin-top: 1rem;
+}
+
+.socials a {
+  color: #aaa;
+  transition: color 0.2s ease;
+}
+
+.socials a:hover {
+  color: white;
+}
+
+.socials img {
+  width: 24px;
+  height: 24px;
+}
+
   </style>
 </head>
 <body>
@@ -171,11 +194,22 @@
     <p class="cta-subtext">Start your kawai magic now ✨</p>
     <button class="cta-button">Try it now</button>
     <div class="footer">
-      <p>
-        <a href="privacy-policy.html" style="color: #888; text-decoration: none;">Privacy Policy</a> -
-        <a href="mailto:filiphood.creative@gmail.com" style="color: #888; text-decoration: none;">Contact</a>
-      </p>
-    </div>
-  </div>
+        <p>
+          <a href="privacy-policy.html" style="color: #888; text-decoration: none;">Privacy Policy</a> -
+          <a href="mailto:filiphood.creative@gmail.com" style="color: #888; text-decoration: none;">Contact</a>
+        </p>
+        <p>Created by Filip Hood</p>
+        <div class="socials">
+          <a href="https://x.com/filip.hood" target="_blank" aria-label="X / Twitter">
+            <img src="https://cdn.simpleicons.org/x/AAAAAA" alt="X icon" />
+          </a>
+          <a href="https://bsky.app/profile/filiphood" target="_blank" aria-label="Bluesky">
+            <img src="https://cdn.simpleicons.org/bluesky/AAAAAA" alt="Bluesky icon" />
+          </a>
+          <a href="https://www.youtube.com/@filip.hood" target="_blank" aria-label="YouTube">
+            <img src="https://cdn.simpleicons.org/youtube/AAAAAA" alt="YouTube icon" />
+          </a>
+        </div>
+      </div>
 </body>
 </html>
