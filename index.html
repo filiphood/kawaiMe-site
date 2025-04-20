@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>kawaiMe</title>
+  <title>KawaiMe</title>
   <style>
     body {
       margin: 0;
@@ -21,32 +21,57 @@
     }
 
     .logo {
-      width: 64px;
-      height: 64px;
-      margin: 2rem auto 1rem;
+      width: 48px;
+      height: 48px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 1.5rem;
+    }
+
+    .brand-name {
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: #fff;
     }
 
     h1 {
       font-size: 2.5rem;
       font-weight: bold;
-      margin-bottom: 1rem;
+      margin-bottom: 1.5rem;
     }
 
-    p.subtext {
-      font-size: 1rem;
-      color: #ccc;
-      margin-bottom: 2rem;
+    .steps-graphic {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 2rem;
+      margin-bottom: 2.5rem;
+      flex-wrap: wrap;
     }
 
-    .download-button {
-      background-color: #eaeaea;
-      color: #000;
-      border: none;
-      padding: 0.6rem 1.2rem;
-      font-size: 1rem;
-      border-radius: 8px;
-      cursor: pointer;
-      margin-bottom: 3rem;
+    .step {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 140px;
+    }
+
+    .step img {
+      width: 64px;
+      height: 64px;
+      margin-bottom: 0.5rem;
+    }
+
+    .step p {
+      font-size: 0.95rem;
+      line-height: 1.3;
+      color: white;
+      margin: 0;
     }
 
     .phone-preview {
@@ -66,12 +91,6 @@
     .rainbow-bg {
       background: url('assets/bg.png') center/cover no-repeat;
       padding: 4rem 0;
-    }
-
-    .steps {
-      font-size: 1rem;
-      margin-top: 2rem;
-      color: #ccc;
     }
 
     .cta-button {
@@ -100,15 +119,32 @@
 </head>
 <body>
   <div class="container">
-    <div style="display: flex; align-items: center; justify-content: center; gap: 12px; margin-bottom: 1rem;">
-        <img src="assets/appicon.png" alt="App Icon" class="logo" />
-        <span style="font-size: 2rem; font-weight: bold;">KawaiMe</span>
-      </div>
+    <div class="brand">
+      <img src="assets/appicon@1x.png" alt="App Icon" class="logo" />
+      <span class="brand-name">KawaiMe</span>
+    </div>
+
     <h1>Transform your photos into<br />kawai masterpieces</h1>
-    <p class="subtext">Some subtext that explains the app</p>
+
+    <div class="steps-graphic">
+      <div class="step">
+        <img src="assets/step1.png" alt="Upload a photo" />
+        <p>Upload<br />a photo</p>
+      </div>
+      <div class="step">
+        <img src="assets/step2.png" alt="Choose a kawaii style" />
+        <p>Choose<br />a kawaii style</p>
+      </div>
+      <div class="step">
+        <img src="assets/step3.png" alt="Boom!" />
+        <p>Boom!<br />Get your magic!</p>
+      </div>
+    </div>
+
     <a href="https://apps.apple.com/app/idYOUR_APP_ID" target="_blank" rel="noopener">
-        <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store" style="height: 50px;" />
-      </a>  </div>
+      <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store" style="height: 50px;" />
+    </a>
+  </div>
 
   <div class="rainbow-bg">
     <div class="phone-preview">
@@ -117,13 +153,13 @@
   </div>
 
   <div class="container">
-    <p class="steps">Upload a photo → Choose a kawaii style → Boom! Get your magic! :)</p>
     <button class="cta-button">Try it now</button>
     <div class="footer">
-        <p>
-            <a href="privacy.html" style="color: #888; text-decoration: none;">Privacy Policy</a> -
-            <a href="mailto:filiphood.creative@gmail.com" style="color: #888; text-decoration: none;">Contact</a>
-          </p>    </div>
+      <p>
+        <a href="privacy-policy.html" style="color: #888; text-decoration: none;">Privacy Policy</a> -
+        <a href="mailto:filiphood.creative@gmail.com" style="color: #888; text-decoration: none;">Contact</a>
+      </p>
+    </div>
   </div>
 </body>
 </html>
