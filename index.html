@@ -48,36 +48,44 @@
     .steps-graphic {
       display: flex;
       justify-content: center;
-      align-items: flex-start;
-      gap: 2rem;
+      align-items: center;
+      gap: 1.5rem;
       margin-bottom: 2.5rem;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      padding: 0 1rem;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+    }
+
+    .steps-graphic::-webkit-scrollbar {
+      display: none;
     }
 
     .step {
       display: flex;
       flex-direction: column;
       align-items: center;
-      max-width: 140px;
+      max-width: 100px;
+      flex-shrink: 0;
     }
 
     .step img {
-      width: 64px;
-      height: 64px;
-      margin-bottom: 0.5rem;
+      width: 48px;
+      height: 48px;
+      margin-bottom: 0.3rem;
+    }
+
+    .step p {
+      font-size: 0.85rem;
+      line-height: 1.2;
     }
 
     .chevron {
-  font-size: 2rem;
-  color: #ccc;
-  align-self: center;
-}
-
-    .step p {
-      font-size: 0.95rem;
-      line-height: 1.3;
-      color: white;
-      margin: 0;
+      font-size: 1.5rem;
+      color: #ccc;
+      align-self: center;
+      flex-shrink: 0;
     }
 
     .phone-preview {
@@ -113,11 +121,11 @@
     }
 
     .cta-subtext {
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: white;
-  margin-top: 2rem;
-}
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: white;
+      margin-top: 2rem;
+    }
 
     .cta-button:hover {
       background-color: #ff4f6a;
@@ -130,27 +138,26 @@
     }
 
     .socials {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1.2rem;
-  margin-top: 1rem;
-}
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1.2rem;
+      margin-top: 1rem;
+    }
 
-.socials a {
-  color: #aaa;
-  transition: color 0.2s ease;
-}
+    .socials a {
+      color: #aaa;
+      transition: color 0.2s ease;
+    }
 
-.socials a:hover {
-  color: white;
-}
+    .socials a:hover {
+      color: white;
+    }
 
-.socials img {
-  width: 24px;
-  height: 24px;
-}
-
+    .socials img {
+      width: 24px;
+      height: 24px;
+    }
   </style>
 </head>
 <body>
@@ -163,24 +170,24 @@
     <h1>Transform your photos into<br />kawai masterpieces</h1>
 
     <div class="steps-graphic">
-        <div class="step">
-          <img src="assets/step1.png" alt="Upload a photo" />
-          <p>Upload<br />a photo</p>
-        </div>
-        <div class="chevron">›</div>
-        <div class="step">
-          <img src="assets/step2.png" alt="Choose a kawaii style" />
-          <p>Choose<br />a kawaii style</p>
-        </div>
-        <div class="chevron">›</div>
-        <div class="step">
-          <img src="assets/step3.png" alt="Boom!" />
-          <p>Boom!<br />Get your magic!</p>
-        </div>
+      <div class="step">
+        <img src="assets/step1.png" alt="Upload a photo" />
+        <p>Upload<br />a photo</p>
       </div>
+      <div class="chevron">›</div>
+      <div class="step">
+        <img src="assets/step2.png" alt="Choose a kawaii style" />
+        <p>Choose<br />a kawaii style</p>
+      </div>
+      <div class="chevron">›</div>
+      <div class="step">
+        <img src="assets/step3.png" alt="Boom!" />
+        <p>Boom!<br />Get your magic!</p>
+      </div>
+    </div>
 
     <a href="https://apps.apple.com/app/idYOUR_APP_ID" target="_blank" rel="noopener">
-      <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store" style="height: 50px;" />
+      <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/white/en-us?size=250x83" alt="Download on the App Store" style="height: 50px;" />
     </a>
   </div>
 
@@ -194,22 +201,23 @@
     <p class="cta-subtext">Start your kawai magic now ✨</p>
     <button class="cta-button">Try it now</button>
     <div class="footer">
-        <p>
-          <a href="privacy-policy.html" style="color: #888; text-decoration: none;">Privacy Policy</a> -
-          <a href="mailto:filiphood.creative@gmail.com" style="color: #888; text-decoration: none;">Contact</a>
-        </p>
-        <p>Created by Filip Hood</p>
-        <div class="socials">
-          <a href="https://x.com/filip_hood" target="_blank" aria-label="X / Twitter">
-            <img src="https://cdn.simpleicons.org/x/AAAAAA" alt="X icon" />
-          </a>
-          <a href="https://bsky.app/profile/filiphood.bsky.social" target="_blank" aria-label="Bluesky">
-            <img src="https://cdn.simpleicons.org/bluesky/AAAAAA" alt="Bluesky icon" />
-          </a>
-          <a href="https://www.youtube.com/@filip_hood" target="_blank" aria-label="YouTube">
-            <img src="https://cdn.simpleicons.org/youtube/AAAAAA" alt="YouTube icon" />
-          </a>
-        </div>
+      <p>
+        <a href="privacy-policy.html" style="color: #888; text-decoration: none;">Privacy Policy</a> -
+        <a href="mailto:filiphood.creative@gmail.com" style="color: #888; text-decoration: none;">Contact</a>
+      </p>
+      <p>Created by Filip Hood © 2025</p>
+      <div class="socials">
+        <a href="https://x.com/filip_hood" target="_blank" aria-label="X / Twitter">
+          <img src="https://cdn.simpleicons.org/x/AAAAAA" alt="X icon" />
+        </a>
+        <a href="https://bsky.app/profile/filiphood.bsky.social" target="_blank" aria-label="Bluesky">
+          <img src="https://cdn.simpleicons.org/bluesky/AAAAAA" alt="Bluesky icon" />
+        </a>
+        <a href="https://www.youtube.com/@filip_hood" target="_blank" aria-label="YouTube">
+          <img src="https://cdn.simpleicons.org/youtube/AAAAAA" alt="YouTube icon" />
+        </a>
       </div>
+    </div>
+  </div>
 </body>
 </html>
