@@ -42,7 +42,7 @@
     h1 {
       font-size: 2.5rem;
       font-weight: bold;
-      margin-bottom: 1.5rem;
+      margin-bottom: 3.5rem;
     }
 
     .steps-graphic {
@@ -66,6 +66,12 @@
       height: 64px;
       margin-bottom: 0.5rem;
     }
+
+    .chevron {
+  font-size: 2rem;
+  color: #ccc;
+  align-self: center;
+}
 
     .step p {
       font-size: 0.95rem;
@@ -106,6 +112,13 @@
       transition: background-color 0.3s ease;
     }
 
+    .cta-subtext {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: white;
+  margin-top: 2rem;
+}
+
     .cta-button:hover {
       background-color: #ff4f6a;
     }
@@ -127,19 +140,21 @@
     <h1>Transform your photos into<br />kawai masterpieces</h1>
 
     <div class="steps-graphic">
-      <div class="step">
-        <img src="assets/step1.png" alt="Upload a photo" />
-        <p>Upload<br />a photo</p>
+        <div class="step">
+          <img src="assets/step1.png" alt="Upload a photo" />
+          <p>Upload<br />a photo</p>
+        </div>
+        <div class="chevron">›</div>
+        <div class="step">
+          <img src="assets/step2.png" alt="Choose a kawaii style" />
+          <p>Choose<br />a kawaii style</p>
+        </div>
+        <div class="chevron">›</div>
+        <div class="step">
+          <img src="assets/step3.png" alt="Boom!" />
+          <p>Boom!<br />Get your magic!</p>
+        </div>
       </div>
-      <div class="step">
-        <img src="assets/step2.png" alt="Choose a kawaii style" />
-        <p>Choose<br />a kawaii style</p>
-      </div>
-      <div class="step">
-        <img src="assets/step3.png" alt="Boom!" />
-        <p>Boom!<br />Get your magic!</p>
-      </div>
-    </div>
 
     <a href="https://apps.apple.com/app/idYOUR_APP_ID" target="_blank" rel="noopener">
       <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store" style="height: 50px;" />
@@ -153,6 +168,7 @@
   </div>
 
   <div class="container">
+    <p class="cta-subtext">Start your kawai magic now ✨</p>
     <button class="cta-button">Try it now</button>
     <div class="footer">
       <p>
