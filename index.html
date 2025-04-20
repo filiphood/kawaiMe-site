@@ -2,82 +2,122 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>kawaiMe — AI-Powered Kawaii Selfies</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>kawaiMe</title>
   <style>
     body {
       margin: 0;
-      padding: 3rem 1rem;
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-      background: #fffdfd;
-      color: #222;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      padding: 0;
+      background-color: #dcd8f3;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      color: white;
       text-align: center;
     }
 
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    .logo {
+      width: 64px;
+      height: 64px;
+      margin: 2rem auto 1rem;
+    }
+
     h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
     }
 
-    p {
-      font-size: 1.2rem;
-      max-width: 600px;
+    p.subtext {
+      font-size: 1rem;
+      color: #ccc;
+      margin-bottom: 2rem;
     }
 
-    .btn {
-      background-color: #ff69b4;
-      color: white;
-      padding: 0.8rem 1.6rem;
+    .download-button {
+      background-color: #eaeaea;
+      color: #000;
+      border: none;
+      padding: 0.6rem 1.2rem;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-bottom: 3rem;
+    }
+
+    .phone-preview {
+      position: relative;
+      width: 100%;
+      max-width: 300px;
+      margin: 0 auto;
+    }
+
+    .phone-preview img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 24px;
+    }
+
+    .rainbow-bg {
+      background: url('assets/bg.png') center/cover no-repeat;
+      padding: 4rem 0;
+    }
+
+    .steps {
+      font-size: 1rem;
       margin-top: 2rem;
+      color: #ccc;
+    }
+
+    .cta-button {
+      background-color: #ff6b81;
+      color: white;
+      font-weight: bold;
       border: none;
       border-radius: 999px;
-      font-size: 1rem;
+      padding: 1rem 2rem;
+      font-size: 1.1rem;
+      margin-top: 3rem;
       cursor: pointer;
-      text-decoration: none;
-      display: inline-block;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #ff4f6a;
     }
 
     .footer {
-      margin-top: 4rem;
-      font-size: 0.9rem;
-      color: #777;
-    }
-
-    .footer a {
-      color: #555;
-      text-decoration: none;
-    }
-
-    .footer a:hover {
-      text-decoration: underline;
-    }
-
-    .preview {
       margin-top: 3rem;
-      max-width: 300px;
-      border-radius: 12px;
-      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+      font-size: 0.8rem;
+      color: #888;
     }
-
   </style>
 </head>
 <body>
-
-  <h1>✨ kawaiMe ✨</h1>
-  <p>Transform your selfies into adorable, AI-generated anime, chibi, or Ghibli-style art. Get kawaiified in seconds.</p>
-
-  <!-- You can replace the image below with a preview -->
-  <img src="preview_kawai.jpg" alt="kawaii preview" class="preview" />
-
-  <a href="https://testflight.apple.com/join/your-link-here" class="btn">Join TestFlight</a>
-
-  <div class="footer">
-    📧 Contact: <a href="mailto:hello@kawaine.app">hello@kawaine.app</a><br>
-    🔒 <a href="privacy-policy.html">Privacy Policy</a>
+  <div class="container">
+    <img src="assets/appicon.png" alt="App Icon" class="logo" />
+    <h1>Transform your photos into<br />kawai masterpieces</h1>
+    <p class="subtext">Some subtext that explains the app</p>
+    <button class="download-button">Download for iOS</button>
   </div>
 
+  <div class="rainbow-bg">
+    <div class="phone-preview">
+      <img src="assets/screenshot.png" alt="App Screenshot" />
+    </div>
+  </div>
+
+  <div class="container">
+    <p class="steps">Upload a photo → Choose a kawaii style → Boom! Get your magic! :)</p>
+    <button class="cta-button">Try it now</button>
+    <div class="footer">
+      <p>Privacy policy - Contact</p>
+    </div>
+  </div>
 </body>
 </html>
