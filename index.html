@@ -8,7 +8,7 @@
     body {
       margin: 0;
       padding: 0;
-      background-color: #050311;
+      background-color: #130E21;
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
       color: white;
       text-align: center;
@@ -20,72 +20,17 @@
       padding: 2rem;
     }
 
-    .logo {
-      width: 48px;
-      height: 48px;
-    }
-
-    .brand {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 12px;
-      margin-bottom: 1.5rem;
-    }
-
-    .brand-name {
-      font-size: 1.5rem;
-      font-weight: 500;
-      color: #fff;
-    }
-
     h1 {
       font-size: 2.5rem;
       font-weight: bold;
-      margin-bottom: 3.5rem;
+      margin-bottom: 1.5rem;
     }
 
-    .steps-graphic {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 1.5rem;
-      margin-bottom: 2.5rem;
-      flex-wrap: nowrap;
-      overflow-x: auto;
-      padding: 0 1rem;
-      -webkit-overflow-scrolling: touch;
-      scrollbar-width: none;
-    }
-
-    .steps-graphic::-webkit-scrollbar {
-      display: none;
-    }
-
-    .step {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      max-width: 100px;
-      flex-shrink: 0;
-    }
-
-    .step img {
-      width: 48px;
-      height: 48px;
-      margin-bottom: 0.3rem;
-    }
-
-    .step p {
-      font-size: 0.85rem;
-      line-height: 1.2;
-    }
-
-    .chevron {
-      font-size: 1.5rem;
+    .subheadline {
+      font-size: 1.2rem;
+      font-weight: 400;
       color: #ccc;
-      align-self: center;
-      flex-shrink: 0;
+      margin-bottom: 3rem;
     }
 
     .phone-preview {
@@ -102,13 +47,8 @@
       border-radius: 24px;
     }
 
-    .rainbow-bg {
-      background: url('assets/bg.png') center/cover no-repeat;
-      padding: 4rem 0;
-    }
-
     .cta-button {
-      background-color: #ff6b81;
+      background-color: #DF2E2C;
       color: white;
       font-weight: bold;
       border: none;
@@ -120,15 +60,15 @@
       transition: background-color 0.3s ease;
     }
 
+    .cta-button:hover {
+      background-color: #b82422;
+    }
+
     .cta-subtext {
       font-size: 1.2rem;
       font-weight: 500;
       color: white;
       margin-top: 2rem;
-    }
-
-    .cta-button:hover {
-      background-color: #ff4f6a;
     }
 
     .footer {
@@ -162,44 +102,22 @@
 </head>
 <body>
   <div class="container">
-    <div class="brand">
-      <img src="assets/appicon@1x.png" alt="App Icon" class="logo" />
-      <span class="brand-name">KawaiMe</span>
-    </div>
-
-    <h1>Transform your photos into<br />kawai masterpieces</h1>
-
-    <div class="steps-graphic">
-      <div class="step">
-        <img src="assets/step1.png" alt="Upload a photo" />
-        <p>Upload<br />a photo</p>
-      </div>
-      <div class="chevron">›</div>
-      <div class="step">
-        <img src="assets/step2.png" alt="Choose a kawaii style" />
-        <p>Choose<br />a kawaii style</p>
-      </div>
-      <div class="chevron">›</div>
-      <div class="step">
-        <img src="assets/step3.png" alt="Boom!" />
-        <p>Boom!<br />Get your magic!</p>
-      </div>
-    </div>
+    <h1>Say hello to your kawai side!</h1>
+    <p class="subheadline">Upload your photo. Choose a style. Get kawai!</p>
 
     <a href="https://apps.apple.com/app/idYOUR_APP_ID" target="_blank" rel="noopener">
       <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/white/en-us?size=250x83" alt="Download on the App Store" style="height: 50px;" />
     </a>
   </div>
 
-  <div class="rainbow-bg">
-    <div class="phone-preview">
-      <img src="assets/screenshot.png" alt="App Screenshot" />
-    </div>
-  </div>
-
   <div class="container">
+    <div class="phone-preview">
+      <img src="assets/Hero.png" alt="App Hero Image" />
+    </div>
+
     <p class="cta-subtext">Start your kawai magic now ✨</p>
     <button class="cta-button">Try it now</button>
+
     <div class="footer">
       <p>
         <a href="privacy-policy.html" style="color: #888; text-decoration: none;">Privacy Policy</a> -
