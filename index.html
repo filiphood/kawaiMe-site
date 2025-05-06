@@ -34,18 +34,23 @@
     }
 
     .phone-preview {
-      position: relative;
-      width: 100%;
-      max-width: 300px;
-      margin: 0 auto;
-    }
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
 
-    .phone-preview img {
-      width: 100%;
-      height: auto;
-      display: block;
-      border-radius: 24px;
-    }
+.phone-preview img {
+  width: 100%;
+  height: auto;
+  max-width: 2048px;
+  aspect-ratio: 2048 / 915;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  border-radius: 0;
+}
 
     .cta-button {
       background-color: #DF2E2C;
